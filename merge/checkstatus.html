@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title> Drop Down Sidebar Menu | by paseen </title>
+    <link rel="stylesheet" href="css/checkStatusStyle.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js' rel='stylesheet'>
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js' rel='stylesheet'>
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css' rel='stylesheet'>
+    <link href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css' rel='stylesheet'>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+  <div class="sidebar close">
+    <div class="logo-details">
+      <i><img src="image/2048px-Emblem_of_Thammasat_University.svg.png" width="40px" height="40px"></i> 
+      <span class="logo_name">Thammasat</span>
+    </div>
+    <ul class="nav-links">
+      <li>
+        <a href="#">
+          <i class='bx bx-grid-alt' ></i>
+          <span class="link_name">หน้าหลัก</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">หน้าหลัก</a></li>
+        </ul>
+      </li>
+        <li>
+          <a href="#">
+            <i class='bx bx-book-alt' ></i>
+            <span class="link_name">กรอกคำร้อง</span>
+          </a>
+          <ul class="sub-menu blank">
+            <li><a class="link_name" href="#">กรอกคำร้อง</a></li>
+          </ul>
+      </li>
+      <li>
+        <div class="iocn-link">
+          <a href="#">
+            <i class='bx bx-collection' ></i>
+            <span class="link_name">แก้ไขคำร้อง</span>
+          </a>
+          <i class='bx bxs-chevron-down arrow' ></i>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="#">แก้ไขคำร้อง</a></li>
+          <li><a href="#">แนบเอกสารใหม่</a></li>
+          <li><a href="#">ตรวจเอกสารเดิม</a></li>
+          <li><a href="#">ดูแบบคำร้องในอดีต</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">
+          <i class='bx bx-cog' ></i>
+          <span class="link_name">ตั้งค่า</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">Setting</a></li>
+        </ul>
+      </li>
+      <li>
+    <div class="profile-details">
+      <div class="profile-content">
+        <img src="image/profile.jpg" alt="profileImg">
+      </div>
+      <div class="name-job">
+        <div class="profile_name">Paseen</div>
+        <div class="job">Rachapro</div>
+      </div>
+      <i class='bx bx-log-out' ></i>
+    </div>
+  </li>
+</ul>
+  </div>
+  <section class="home-section">
+    <div class="home-content">
+      <i class='bx bx-menu' ></i>
+      <span class="text">Check status</span>
+    </div>
+    <div class="frame-div">
+      <div class="base-div"></div>
+      <img class="img1-icon" alt="" src="image/img1@2x.png" /><img
+        class="ellipse-icon"
+        alt=""
+        src="image/ellipse-1@2x.png"  
+      />
+      <div class="div" style="color: white;"><b>สวัสดี, นายพศิน แสงอรุณ</b></div>
+
+      <div class="container px-1 px-md-4 py-5 mx-auto"> <!-- เปลี่ยนตำแหน่ง card status-->
+        <div class="card">
+            <div class="row d-flex justify-content-between px-5 top">
+                <div class="d-flex">
+                    <h5>หมายเลข <span class="text-primary font-weight-bold">#00001</span></h5>
+                </div>
+                <div class="d-flex flex-column text-sm-right">
+                    <p class="mb-0">วันหมดอายุ <span>01/12/22</span></p>
+                    <p>รหัสนักศึกษา <span class="font-weight-bold">6409682835</span></p>
+                </div>
+            </div>
+            <!-- Add class 'active' to progress -->
+            <div class="row d-flex justify-content-center">
+                <div class="col-10">
+                <ul id="progressbar" class="text-center">
+                    <li class="step0"></li>
+                    <li class="step0"></li>
+                    <li class="active step0"></li>
+                    <li class="step0"></li>
+                </ul>
+                </div>
+            </div>
+            <div class="row justify-content-between top">
+                <div class="row d-flex icon-content">
+                    <div class="d-flex flex-column">
+                    </div>
+                </div>
+                <div class="row d-flex icon-content">
+                    <div class="d-flex flex-column">
+                    </div>
+                </div>
+                <div class="row d-flex icon-content">
+                    <div class="d-flex flex-column">
+                        <p class="font-weight-bold" style="color: red;">ติดต่อ<br>เจ้าหน้าที่</p>
+                    </div>
+                    
+                </div>
+                
+                <div class="row d-flex icon-content">
+                    <div class="d-flex flex-column">
+                    </div>
+                    <a href="contact.html" type ="button"class="button">contact</a>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+      
+    
+
+  </section>
+
+  <script src="script.js"></script>
+
+</body>
+</html>

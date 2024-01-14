@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title> Form registration site </title>
+    <link rel="stylesheet" href="css/styleform.css">
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="css/table.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" rel="stylesheet">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+
+  <div class="sidebar close">
+    <div class="logo-details">
+      <i><img src="image/2048px-Emblem_of_Thammasat_University.svg.png" width="40px" height="40px"></i> 
+      <span class="logo_name">Thammasat</span>
+    </div>
+    <ul class="nav-links">
+      <li>
+        <a href="#">
+          <i class='bx bx-grid-alt' ></i>
+          <span class="link_name">หน้าหลัก</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="home.html">หน้าหลัก</a></li>
+        </ul>
+      </li>
+        <li>
+          <a href="#">
+            <i class='bx bx-book-alt' ></i>
+            <span class="link_name">กรอกคำร้อง</span>
+          </a>
+          <ul class="sub-menu blank">
+            <li><a class="link_name" href="#">กรอกคำร้อง</a></li>
+          </ul>
+      </li>
+      <li>
+        <div class="iocn-link">
+          <a href="#">
+            <i class='bx bx-collection' ></i>
+            <span class="link_name">แก้ไขคำร้อง</span>
+          </a>
+          <i class='bx bxs-chevron-down arrow' ></i>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="#">แก้ไขคำร้อง</a></li>
+          <li><a href="#">แนบเอกสารใหม่</a></li>
+          <li><a href="#">ตรวจเอกสารเดิม</a></li>
+          <li><a href="#">ดูแบบคำร้องในอดีต</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">
+          <i class='bx bx-cog' ></i>
+          <span class="link_name">ตั้งค่า</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">Setting</a></li>
+        </ul>
+      </li>
+      <li>
+    <div class="profile-details">
+      <div class="profile-content">
+        <img src="image/profile.jpg" alt="profileImg">
+      </div>
+      <div class="name-job">
+        <div class="profile_name">Paseen</div>
+        <div class="job">Rachapro</div>
+      </div>
+      <i class='bx bx-log-out' ></i>
+    </div>
+  </li>
+</ul>
+  </div>
+  <section class="home-section">
+    <div class="home-content">
+      <i class='bx bx-menu' ></i>
+      <span class="text">Homepage</span>
+    </div>
+    <div class="frame-div">
+      <div class="base-div">
+      <img class="img1-icon" alt="" src="image/img1@2x.png"/><img
+        class="ellipse-icon"
+        alt=""
+        src="image/ellipse-1@2x.png"  
+      />
+      <div class ="d-flex justify-content-center style-form">
+        <div class="wrapper rounded bg-white">
+            <div class="h3 table-head"><b>เพิ่ม/ถอนคำร้อง</b></div><br>        
+            <div class="h5 table-add" style="text-align: left;">
+               <label class="formLabel"><b>เพิ่มคำร้อง</b></label>
+            </div><br>
+            <div class="add" style="text-align: left;">
+            <input type="button" class="buttonAW" value="เพิ่มตาราง" onclick="addRows('add_subject')"&emsp;>
+            <input type="button" class="buttonAW" value="ลดตาราง" onclick="deleteRows('add_subject')">
+        <table class="center" id="add_subject" >
+  			<tr>
+                <th><d style="width: 10%">&nbsp;&nbsp;&nbsp;</d></th>
+                <th><d style="width: 5%">รหัสวิชา</d></th>
+                <th><d style="width: 5%">ชื่อวิชา</d></th>
+                <th><d style="width: 5%">section</d></th>
+                <th><d style="width: 5%">วัน/เวลา</d></th>
+                <th><d style="width: 5%">หน่วยกิต</d></th>
+                <th><d style="width: 5%">ชื่อผู้สอน</d></th>
+                <th><d style="width: 5%">ผู้สอนอนุญาต</d></th>
+  			</tr>
+ 			<tr>
+                    <td id="add0"><p id="description" data-content="1." ></p></td>
+                    <td id="add1"><input type="text" name="ID[]" ></td>
+                    <td id="add2"><input type="text" name="subject[]"></td>
+                    <td id="add3"><input type="text" name="section[]"></td>
+                    <td id="add4"><input type="text" name="subjectDate[]"></td>
+                    <td id="add5"><input type="number" name="credit[]"  value = 0 ></td>
+                    <td id="add6"><input type="text"  name="teacherName[]" ></td>
+                    <td id="add7"><input type="checkbox" name="teacherAccept[]"></td>
+  			</tr>
+  		</table>
+            </div><br>
+            <div class="h5 table-add" style="text-align: left;">
+                <label><b>ถอนคำร้อง</b></label>
+            </div><br>
+        <div class="delete" style="text-align: left;"> 
+        <input type="button" class="buttonAW" value="เพิ่มตาราง" onclick="addRows('del_subject')"&emsp;>
+        <input type="button" class="buttonAW" value="ลดตาราง" onclick="deleteRows('del_subject')">
+        <table class="center" id="del_subject">
+            <tr>
+                <th><d style="width: 5%">&nbsp;&nbsp;&nbsp;</d></th>
+                <th><d style="width: 10%">รหัสวิชา</d></th>
+                <th><d style="width: 20%">ชื่อวิชา</d></th>
+                <th><d style="width: 10%">section</d></th>
+                <th><d style="width: 10%">วัน/เวลา</d></th>
+                <th><d style="width: 5%">หน่วยกิต</d></th>
+                <th><d style="width: 15%">ชื่อผู้สอน</d></th>
+                <th><d style="width: 5%">ผู้สอนอนุญาต</d></th>
+            </tr>
+            <tr>
+                    <td id="del0"><p id="description" data-content="1."></p></td>
+                    <td id="del1"><input type="text" name="ID[]"></td>
+                    <td id="del2"><input type="text" name="subject[]"></td>
+                    <td id="del3"><input type="text" name="section[]"></td>
+                    <td id="del4"><input type="text" name="subjectDate[]"></td>
+                    <td id="del5"><input type="number" name="credit[]" value = 0></td>
+                    <td id="del6"><input type="text"  name="teacherName[]"></td>
+                    <td id="del7"><input type="checkbox" name="teacherAccept[]" ></td>
+            </tr>
+        </table>
+        
+    </div>
+    <a href="formrelated.html" type="button" class="btn btn-primary btn-block mb-4">Submit</a>
+</div>   
+  </div>
+</div>
+</div>
+  </section>
+
+  <script src="script.js"></script>
+  <script src="tableAddDelete.js"></script>
+</body>
+</html>

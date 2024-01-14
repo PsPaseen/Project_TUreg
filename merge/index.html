@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Noto+Sans+Thai&display=swap');
+        body {
+            font-family: 'Noto Sans Thai',serif;
+            margin-top: 30px;
+            margin-left: 150px;
+            margin-right: 150px;
+        }
+        .btn-block {
+        margin-top: 20px;
+        text-align: right;
+        }
+        button {
+        width: 150px;
+        padding: 10px;
+        order: none;
+        -webkit-border-radius: 5px; 
+        -moz-border-radius: 5px; 
+        border-radius: 5px; 
+        background-color: #095484;
+        font-size: 16px;
+        color: #fff;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        }
+        button:hover {
+        background-color: #0666a3;
+        }
+        .pic1 {
+          z-index: 1;
+            text-align: center;
+            position: relative;
+        }
+        .pic2 {
+          z-index: 1;
+            position: relative;
+            top: -20px;
+            text-align: center;
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <img src="image/TU.png" alt="TU" style="width: 457px; height: 99px;" >
+    <p style="font-size: 30px; 
+        width: 260px;
+        padding: 10px;
+        order: none;
+        -webkit-border-radius: 5px; 
+        -moz-border-radius: 5px; 
+        border-radius: 5px; 
+        background-color: #0666a3;
+        color: rgb(255, 255, 255);
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;">
+        <b> Form กรอกคำอนุมัติ </b></p>
+    <div class="Form">
+        <form action="First">
+          <table>
+            <tr>
+              <td class="firstA-col" style="font-size: 20px;">อาจารย์ที่ปรึกษา</td>
+              <td><input type="radio" value="none" name="selectA" /></td>
+            </tr>
+            <tr>
+              <td class="secondA-col" style="font-size: 20px;">คณะบดี</td>
+              <td><input type="radio" value="none" name="selectA" /></td>
+            </tr>
+            <tr>
+              <td class="thirdA-col" style="font-size: 20px;">จารผู้สอน</td>
+              <td><input type="radio" value="none" name="selectA" /></td>
+            </tr>
+          </table>
+          <p style="font-size: 20px; 
+          width: 160px;
+          padding: 10px;
+          order: none;
+          -webkit-border-radius: 5px; 
+          -moz-border-radius: 5px; 
+          border-radius: 5px; 
+          background-color: #0666a3;
+          color: #fff;
+          box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+          "> <b>Form</b> จากนักศึกษา </p>
+          <div class="allpic">
+            <div class="h3 formTitle"><b>รายละเอียดส่วนตัว</b></div>
+            <label>First Name</label>
+                <input type="text" class="form-control" required list="frontsname">
+                <datalist id="frontsname">
+                  <option>นาย</option>
+                  <option>นางสาว</option>
+                  <option>นาง</option>
+                </datalist>
+                <label>Last Name</label>
+                <input type="text" class="form-control" required>
+                <label>Birthday</label>
+                <input type="date" class="form-control" required>
+                <label> Gender</label>
+                    <label class="option">
+                        <input type="radio" name="radio">Male
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="option">
+                        <input type="radio" name="radio">Female
+                        <span class="checkmark"></span>
+                    </label>
+            </div>
+            <div class="col-md-1 mt-md-0 mt-3">
+                <label>Email</label>
+                <input type="email" class="form-control" required>
+                <label>Phone Number</label>
+                <input type="tel" class="form-control" required>
+                <label>Subject</label>
+            <select id="sub" required>
+              <option value="" disabled selected >โปรดระบุ</option>
+              <option value="วิชาพื้นฐานทางวิทยาศาสตร์และคณิตศาสตร์">วิชาพื้นฐานทางวิทยาศาสตร์และคณิตศาสตร์</option>
+              <option value="สาขาวิชาสถิติ">สาขาวิชาสถิติ</option>
+              <option value="สาขาวิชาคณิตศาสตร์">สาขาวิชาคณิตศาสตร์</option>
+              <option value="สาขาวิชาวิทยาศาสตร์สิ่งแวดล้อม">สาขาวิชาวิทยาศาสตร์สิ่งแวดล้อม</option>
+              <option value="สาขาวิชาเทคโนโลยีเพื่อการพัฒนายั่งยืน">สาขาวิชาเทคโนโลยีเพื่อการพัฒนายั่งยืน</option>
+              <option value="สาขาวิชาเทคโนโลยีการเกษตร">สาขาวิชาเทคโนโลยีการเกษตร</option>
+              <option value="สาขาวิชาเคมี">สาขาวิชาเคมี</option>
+              <option value="สาขาวิชาวิทยาศาสตร์และเทคโนโลยีการอาหาร">สาขาวิชาวิทยาศาสตร์และเทคโนโลยีการอาหาร</option>
+              <option value="สาขาวิชาคณิตศาสตร์ประยุกต์">สาขาวิชาคณิตศาสตร์ประยุกต์</option>
+              <option value="สาขาวิชาฟิสิกส์อิเล็กทรอนิกส์">วิชาพื้นฐานทางวิทยาศาสตร์และคณิตศาสตร์</option>
+              <option value="สาขาวิชาเทคโนโลยีชีวภาพ">สาขาวิชาเทคโนโลยีชีวภาพ</option>
+              <option value="สาขาวิชาฟิสิกส์">สาขาวิชาฟิสิกส์</option>
+              <option value="สาขาวิชาวัสดุศาสตร์">สาขาวิชาวัสดุศาสตร์</option>
+              <option value="สาขาวิชาวิทยาศาสตร์และเทคโนโลยีสิ่งทอ">สาขาวิชาวิทยาศาสตร์และเทคโนโลยีสิ่งทอ</option>
+              <option value="สาขาวิชาวิทยาการคอมพิวเตอร์">สาขาวิชาวิทยาการคอมพิวเตอร์</option>
+            </select>
+            </div>
+            <p></p>
+            <div class="h3 table-head"><b>เพิ่ม/ถอนคำร้อง</b></div><br>        
+            <div class="h5 table-add" style="text-align: left;">
+               <label class="formLabel"><b>เพิ่มคำร้อง</b></label>
+            </div><br>
+            <table class="center" id="add_subject" >
+              <tr>
+                      <th><d style="width: 10%">&nbsp;&nbsp;&nbsp;</d></th>
+                      <th><d style="width: 5%">รหัสวิชา</d></th>
+                      <th><d style="width: 5%">ชื่อวิชา</d></th>
+                      <th><d style="width: 5%">section</d></th>
+                      <th><d style="width: 5%">วัน/เวลา</d></th>
+                      <th><d style="width: 5%">หน่วยกิต</d></th>
+                      <th><d style="width: 5%">ชื่อผู้สอน</d></th>
+                      <th><d style="width: 5%">ผู้สอนอนุญาต</d></th>
+              </tr>
+             <tr>
+                          <td id="add0"><p id="description" data-content="1." ></p></td>
+                          <td id="add1"><input type="text" name="ID[]" ></td>
+                          <td id="add2"><input type="text" name="subject[]"></td>
+                          <td id="add3"><input type="text" name="section[]"></td>
+                          <td id="add4"><input type="text" name="subjectDate[]"></td>
+                          <td id="add5"><input type="number" name="credit[]"  value = 0 ></td>
+                          <td id="add6"><input type="text"  name="teacherName[]" ></td>
+                          <td id="add7"><input type="checkbox" name="teacherAccept[]"></td>
+              </tr>
+            </table>
+                  </div><br>
+                  <div class="h5 table-add" style="text-align: left;">
+                      <label><b>ถอนคำร้อง</b></label>
+                  </div><br>
+              
+              <table class="center" id="del_subject">
+                  <tr>
+                      <th><d style="width: 5%">&nbsp;&nbsp;&nbsp;</d></th>
+                      <th><d style="width: 10%">รหัสวิชา</d></th>
+                      <th><d style="width: 20%">ชื่อวิชา</d></th>
+                      <th><d style="width: 10%">section</d></th>
+                      <th><d style="width: 10%">วัน/เวลา</d></th>
+                      <th><d style="width: 5%">หน่วยกิต</d></th>
+                      <th><d style="width: 15%">ชื่อผู้สอน</d></th>
+                      <th><d style="width: 5%">ผู้สอนอนุญาต</d></th>
+                  </tr>
+                  <tr>
+                          <td id="del0"><p id="description" data-content="1."></p></td>
+                          <td id="del1"><input type="text" name="ID[]"></td>
+                          <td id="del2"><input type="text" name="subject[]"></td>
+                          <td id="del3"><input type="text" name="section[]"></td>
+                          <td id="del4"><input type="text" name="subjectDate[]"></td>
+                          <td id="del5"><input type="number" name="credit[]" value = 0></td>
+                          <td id="del6"><input type="text"  name="teacherName[]"></td>
+                          <td id="del7"><input type="checkbox" name="teacherAccept[]" ></td>
+                  </tr>
+              </table>
+            
+          </div>
+          <p style="font-size: 25px;
+          width: 120px;
+          padding: 10px;
+          order: none;
+          -webkit-border-radius: 5px; 
+          -moz-border-radius: 5px; 
+          border-radius: 5px; 
+          background-color: #0666a3;
+          color: #fff;
+          box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+          ""><b> กรุณาเลือก </b></p>
+          <form action="Second">
+            <table>
+                <tr>
+                  <td class="firstB-col" style="font-size: 20px;"> อนุมัติ </td>
+                  <td><input type="radio" value="none" name="selectB" /></td>
+                </tr>
+                <tr>
+                  <td class="secondB-col" style="font-size: 20px;"> ไม่อนุมัติ </td>
+                  <td><input type="radio" value="none" name="selectB" /></td>
+                </tr>
+              </table>
+          <div class="btn-block">
+            <button type="submit" href="">ยอมรับและเสร็จสิ้น</button>
+          </div>
+        </form>
+      </div>
+    </body>
+  </html>
+</body>
+</html>
